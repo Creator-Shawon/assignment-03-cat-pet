@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,91 @@
     <!-- Tailwind and DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        colorPrimary: '#FFDC26',
+                        colorSecondary: '#FFF5DF',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Font Pawsome CDN -->
     <script src="https://kit.fontawesome.com/8360ebd54b.js" crossorigin="anonymous"></script>
     <!-- Google Font CDN  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <style>
-        .sora{
+        .sora {
             font-family: "Sora", serif;
         }
-        .adlam{
+
+        .adlam {
             font-family: "ADLaM Display", serif;
         }
     </style>
 </head>
+
 <body class="sora">
-    <h1>Hello Cat</h1>
-    
+    <header>
+        <nav class="max-w-screen-xl mx-auto px-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <!-- Brand Logo & Title -->
+                    <div class="flex items-center justify-center gap-2">
+                        <img src="./assets/logo-header.png" alt="">
+                        <h1 class="text-[1.7rem] hidden md:block">Browse<span class="text-colorPrimary">4</span>Pets</h1>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Find a Pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="md:flex items-center justify-end gap-3 hidden">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a class="btn bg-white border border-colorPrimary">Login</a>
+                        <a class="btn bg-colorPrimary">Register</a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow right-0">
+                            <li><a>Find a Pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
