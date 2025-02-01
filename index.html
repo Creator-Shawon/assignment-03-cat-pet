@@ -42,8 +42,8 @@
 
 <body class="sora">
     <header>
-        <nav class="max-w-screen-xl mx-auto px-4">
-            <div class="navbar bg-base-100">
+        <nav class="px-4 lg:px-[40px] bg-[#FFF5DF]">
+            <div class="navbar">
                 <div class="navbar-start">
                     <!-- Brand Logo & Title -->
                     <div class="flex items-center justify-center gap-2">
@@ -61,8 +61,8 @@
                 </div>
                 <div class="navbar-end">
                     <div class="md:flex items-center justify-end gap-3 hidden">
-                        <i class="fa-regular fa-bell"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-bell mr-3"></i>
+                        <i class="fa-solid mr-3 fa-magnifying-glass"></i>
                         <a class="btn bg-white border border-colorPrimary">Login</a>
                         <a class="btn bg-colorPrimary">Register</a>
                     </div>
@@ -89,7 +89,7 @@
         <!-- Banner Section -->
         <div class="mb-10 lg:min-h-[700px] max-w-screen-xl mx-auto px-4 mt-16 relative">
             <div class="relative z-10">
-                <h1 class="adlam text-5xl mb-4 mt-5">Pamper Your Pet,
+                <h1 class="adlam text-5xl mb-4 mt-5 leading-[60px]">Pamper Your Pet,
                     <br>Because They Deserve
                     <br>the Bes
                 </h1>
@@ -311,10 +311,10 @@
             </div>
         </section>
         <!-- Low Price Section -->
-        <section class="max-w-screen-xl mx-auto mb-[360px] px-4">
+        <section class="max-w-screen-xl mx-auto md:mb-[360px] mb-[460px]  px-4">
             <h1 class="font-bold text-[36px] mt-20 mb-10">Everyday low Price</h1>
             <div class="grid grid-cols-1 lg:grid-cols-[55%_auto] gap-6">
-                <div class="flex bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] items-center justify-between p-5">
+                <div class="rounded-lg flex bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] items-center justify-between p-5">
                     <div class="lg:pl-8 space-y-3">
                         <p class="sora text-[12px]">Under Price</p>
                         <h2 class="adlam font-bold">Pet Grooming Mitt</h2>
@@ -325,10 +325,10 @@
                         <img src="./assets/cute-dog-mid.png" alt="">
                     </div>
                 </div>
-                <div class="flex bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] left-0 justify-center items-center">
-                    <div>
-                        <h2 class="adlam">T-Shirt for Dogs</h2>
-                        <h1 class="text-3xl adlam">$7.99</h1>
+                <div class=" rounded-lg flex p-5 bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] left-0 justify-center items-center">
+                    <div class="self-start">
+                        <h2 class="adlam text-[32px]">T-Shirt for Dogs</h2>
+                        <h1 class="text-[56px] adlam">$7.99</h1>
                     </div>
                     <div>
                         <img src="./assets/cute-pet-mid.png" alt="">
@@ -337,9 +337,9 @@
             </div>
         </section>
         <!-- Pawsome News -->
-        <section class="absolute bottom-[-550px] left-[100px] right-[100px] shadow-xl">
+        <section class="absolute overflow-hidden md:bottom-[-550px] bottom-[-800px] md:left-[100px] md:right-[100px] right-8 left-8">
             <div
-                class="lg:min-w-[1000px] mx-auto bg-[#FFF9F4] flex lg:flex-row flex-col items-center justify-evenly p-5 gap-10 rounded-xl">
+                class="bg-[#FFF9F4] flex lg:flex-row flex-col items-center justify-evenly p-5 gap-10 rounded-xl">
                 <div>
                     <img src="./assets/cute-pet-mid.png" alt="">
                 </div>
@@ -355,11 +355,11 @@
         </section>
 
     </main>
-    <footer class="footer bg-bgColor text-base-content px-[80px] pb-[60px] pt-[280px] lg:justify-between">
+    <footer class="footer bg-bgColor text-base-content md:px-[80px] px-10 pb-[60px] mt-[350px] md:pt-[280px] pt-[400px]  lg:justify-between">
         <div>
             <div class="flex items-center gap-4">
                 <img src="./assets/logo-footer.png" alt="">
-                <h1 class="text-[1.7rem] hidden md:block">Browse<span class="text-amber-700">4</span>Pets
+                <h1 class="text-[1.7rem]">Browse<span class="text-amber-700">4</span>Pets
                 </h1>
             </div>
             <p class="max-w-[400px]">Discover a world of treats, toys, and essentials handpicked for your furry friends
