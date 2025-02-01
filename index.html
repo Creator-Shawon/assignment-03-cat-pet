@@ -37,6 +37,18 @@
         .adlam {
             font-family: "ADLaM Display", serif;
         }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95); }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1); }
+        }
+        .animation {
+            animation: fade 1.2s ease-out forwards;
+        }
     </style>
 </head>
 
@@ -68,14 +80,10 @@
                     </div>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                            <span class="text-2xl text-yellow-400">&#9776;</span>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow right-0">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[50] mt-3 w-36 p-2 shadow right-0">
                             <li><a>Find a Pet</a></li>
                             <li><a>Breeds</a></li>
                             <li><a>Contact Us</a></li>
@@ -89,10 +97,10 @@
         <!-- Banner Section -->
         <div class="mb-10 lg:min-h-[700px] max-w-screen-xl mx-auto px-4 mt-16 relative">
             <div class="relative z-10">
-                <h1 class="adlam text-5xl mb-4 mt-5 leading-[60px]">Pamper Your Pet,
-                    <br>Because They Deserve
-                    <br>the Bes
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 opacity-0 animation mb-6 max-w-[600px]">
+                    Pamper Your Pet, Because They Deserve the Best
                 </h1>
+
                 <p class="sora">Discover a world of treats, toys, and essentials handpicked for
                     <br>your furry friends. Shop now and make tails wag with joy!
                 </p>
@@ -310,11 +318,44 @@
 
             </div>
         </section>
+        <!-- Pet Gallery -->
+         <section class="max-w-screen-xl mx-auto px-5 md:px-10 mt-20 overflow-hidden">
+            <h1 class="text-4xl font-bold mb-7">Pet Gallery</h1>
+            <div class="carousel w-full">
+                <div id="item1" class="carousel-item w-full">
+                  <img
+                    src="./assets/cats/cat-1.jpg"
+                    class="w-full object-contain" />
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                  <img
+                    src="./assets/cats/cat-2.jpg"
+                    class="w-full object-contain" />
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                  <img
+                    src="./assets/cats/cat-3.jpg"
+                    class="w-full object-contain" />
+                </div>
+                <div id="item4" class="carousel-item w-full">
+                  <img
+                    src="assets/cats/cat-4.jpg"
+                    class="w-full object-contain" />
+                </div>
+              </div>
+              <div class="flex w-full justify-center gap-2 py-2">
+                <a href="#item1" class="btn btn-xs">1</a>
+                <a href="#item2" class="btn btn-xs">2</a>
+                <a href="#item3" class="btn btn-xs">3</a>
+                <a href="#item4" class="btn btn-xs">4</a>
+              </div>
+         </section>
         <!-- Low Price Section -->
         <section class="max-w-screen-xl mx-auto md:mb-[360px] mb-[460px]  px-4">
             <h1 class="font-bold text-[36px] mt-20 mb-10">Everyday low Price</h1>
             <div class="grid grid-cols-1 lg:grid-cols-[55%_auto] gap-6">
-                <div class="rounded-lg flex bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] items-center justify-between p-5">
+                <div
+                    class="rounded-lg flex bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] items-center justify-between p-5">
                     <div class="lg:pl-8 space-y-3">
                         <p class="sora text-[12px]">Under Price</p>
                         <h2 class="adlam font-bold">Pet Grooming Mitt</h2>
@@ -325,7 +366,8 @@
                         <img src="./assets/cute-dog-mid.png" alt="">
                     </div>
                 </div>
-                <div class=" rounded-lg flex p-5 bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] left-0 justify-center items-center">
+                <div
+                    class=" rounded-lg flex p-5 bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] left-0 justify-center items-center">
                     <div class="self-start">
                         <h2 class="adlam text-[32px]">T-Shirt for Dogs</h2>
                         <h1 class="text-[56px] adlam">$7.99</h1>
@@ -337,16 +379,16 @@
             </div>
         </section>
         <!-- Pawsome News -->
-        <section class="absolute overflow-hidden md:bottom-[-550px] bottom-[-800px] md:left-[100px] md:right-[100px] right-8 left-8">
-            <div
-                class="bg-[#FFF9F4] flex lg:flex-row flex-col items-center justify-evenly p-5 gap-10 rounded-xl">
+        <section
+            class="absolute overflow-hidden md:bottom-[-550px] bottom-[-800px] md:left-[100px] md:right-[100px] right-8 left-8">
+            <div class="bg-[#FFF9F4] flex lg:flex-row flex-col items-center justify-evenly p-5 gap-10 rounded-xl">
                 <div>
                     <img src="./assets/cute-pet-mid.png" alt="">
                 </div>
                 <div class="space-y-4">
                     <h1 class="text-3xl font-bold text-start text-gray-800">Get Pawsome News!</h1>
-                    <p class="text-gray-600 text-center ">Exclusive training tips, ticks, product deals and more.</p>
-                    <input class="px-5 py-4 shadow-lg rounded-md min-w-[300px] max-w-[360px]" type="email"
+                    <p class="text-gray-600 ">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="px-5 py-4 shadow-lg rounded-md w-full" type="email"
                         placeholder="Enter email...">
                     <button class="btn bg-colorPrimary block">Subscribe</button>
                 </div>
@@ -355,7 +397,8 @@
         </section>
 
     </main>
-    <footer class="footer bg-bgColor text-base-content md:px-[80px] px-10 pb-[60px] mt-[350px] md:pt-[280px] pt-[400px]  lg:justify-between">
+    <footer
+        class="footer bg-bgColor text-base-content md:px-[80px] px-10 pb-[60px] mt-[350px] md:pt-[280px] pt-[400px]  lg:justify-between">
         <div>
             <div class="flex items-center gap-4">
                 <img src="./assets/logo-footer.png" alt="">
